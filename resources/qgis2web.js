@@ -76,20 +76,7 @@ var map = new ol.Map({
 var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
 
-    var searchLayer = new SearchLayer({
-      layer: lyr_AlberguesyFundaciones_1,
-      colName: 'Name',
-      zoom: 10,
-      collapsed: true,
-      map: map
-    });
-
-    map.addControl(searchLayer);
-    document.getElementsByClassName('search-layer')[0]
-    .getElementsByTagName('button')[0].className +=
-    ' fa fa-binoculars';
-    
-map.getView().fit([-11170306.583368, 2144314.388559, -10890437.021338, 2283584.007082], map.getSize());
+map.getView().fit([-11159966.042940, 2141239.774588, -10873543.179962, 2283725.732069], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1

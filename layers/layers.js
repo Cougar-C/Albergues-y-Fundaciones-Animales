@@ -30,7 +30,7 @@ var lyr_AlberguesyFundaciones_1 = new ol.layer.Vector({
 lyr_GoogleRoad_0.setVisible(true);lyr_AlberguesyFundaciones_1.setVisible(true);
 var layersList = [lyr_GoogleRoad_0,lyr_AlberguesyFundaciones_1];
 lyr_AlberguesyFundaciones_1.set('fieldAliases', {'Name': 'Name', 'Página We': 'Página We', 'Teléfono': 'Teléfono', 'Dirección': 'Dirección', });
-lyr_AlberguesyFundaciones_1.set('fieldImages', {'Name': 'TextEdit', 'Página We': '', 'Teléfono': '', 'Dirección': '', });
+lyr_AlberguesyFundaciones_1.set('fieldImages', {'Name': 'TextEdit', 'Página We': 'TextEdit', 'Teléfono': 'TextEdit', 'Dirección': 'TextEdit', });
 lyr_AlberguesyFundaciones_1.set('fieldLabels', {'Name': 'inline label', 'Página We': 'inline label', 'Teléfono': 'inline label', 'Dirección': 'inline label', });
 lyr_AlberguesyFundaciones_1.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
