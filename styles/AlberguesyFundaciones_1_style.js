@@ -9,7 +9,7 @@ var style_AlberguesyFundaciones_1 = function(feature, resolution){
     var value = ""
     var labelText = "";
     size = 0;
-    var labelFont = "10.4px \'Arial Black\', sans-serif";
+    var labelFont = "13.0px \'Arial Black\', sans-serif";
     var labelFill = "#000000";
     var bufferColor = "";
     var bufferWidth = 0;
@@ -21,7 +21,7 @@ var style_AlberguesyFundaciones_1 = function(feature, resolution){
         labelText = String(feature.get("Name"));
     }
     var style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 3.999999999999997 + size,
+        image: new ol.style.Circle({radius: 6.000000000000002 + size,
             stroke: new ol.style.Stroke({color: 'rgba(117,58,128,0.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1}), fill: new ol.style.Fill({color: 'rgba(183,25,33,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
